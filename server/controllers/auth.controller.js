@@ -1,6 +1,7 @@
 import { User } from "../models/user.model.js"
 import { generateAccessToken, generateRefreshToken } from "../utils/generateTokens.js"
 import { redisClient } from "../config/redis.js"
+import jwt from "jsonwebtoken"
 
 export const registerUser = async (req, res) => {
 
